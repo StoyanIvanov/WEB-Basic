@@ -1,0 +1,21 @@
+﻿namespace HttpServer.Models
+{
+    public class Cookie
+    {
+        public Cookie() : this(null, null){}
+
+        private Cookie(string name, string value)
+        {
+            this.Name = name;
+            this.Value = value;
+        }
+
+        public string Name { get; private set; }
+        public string Value { get; internal set; }
+
+        public override string ToString()
+        {
+            return $"{this.Name}={this.Value}";
+        }
+    }
+}
