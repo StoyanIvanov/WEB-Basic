@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-namespace HttpServer.Models
+﻿namespace HttpServer.Models
 {
+    using System.Collections;
+    using System.Collections.Generic;
+
     public class CookieCollection : IEnumerable<Cookie>
     {
         public CookieCollection()

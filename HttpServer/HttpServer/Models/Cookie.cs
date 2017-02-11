@@ -4,7 +4,7 @@
     {
         public Cookie() : this(null, null){}
 
-        private Cookie(string name, string value)
+        public Cookie(string name, string value)
         {
             this.Name = name;
             this.Value = value;
